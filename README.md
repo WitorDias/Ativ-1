@@ -1,8 +1,8 @@
-# Ativ-1
+
 public class Carro {
 	String cor, modelo;
 	int velocidadeAtual, velocidadeMaxima = 100;
-	boolean ligar = false;
+	boolean ligar;
 	
 	public Carro(){
 		
@@ -61,10 +61,6 @@ public void ligar( ){
 	
 }
 
-public void desligar( ){
-	 ligar = false;
-		
-}
 	
 	
 }
