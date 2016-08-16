@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Principal {
+public static void main(String[] args) {
+	Locadora teste = new Locadora();
+	Scanner input = new Scanner(System.in);
+	String titulo;
+	System.out.println("Informe o nome do filme:");
+	titulo = input.nextLine();
+	teste.setTitulo(titulo);
+	teste.locarFitas();
+	
+	
+	
+}
+}
