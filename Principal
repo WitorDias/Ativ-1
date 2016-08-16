@@ -5,10 +5,17 @@ public static void main(String[] args) {
 	Carro teste = new Carro();
 	Scanner input = new Scanner(System.in);
 	int leitor;
+	String modelo, cor;
+	System.out.println("Digite qual é o modelo do carro: ");
+	modelo = input.nextLine();
+	teste.setModelo(modelo);
+	System.out.println("Digite qual é a do carro: ");
+	cor = input.nextLine();
+	teste.setCor(cor);
 	System.out.println("Deseja ligar o carro? Então digite 1, caso contrario aperte qualquer tecla.");
 	leitor = input.nextInt();
 	if(leitor == 1){
-		System.out.println("O veiculo está: " + (teste.ligar == true ? "ligado" : "desligado"));
+		System.out.println("O veiculo está: " + (teste.ligar == true ? "ligado" : "desligado") + " O modelo do veiculo é:  " + teste.modelo + " e a cor do veiculo é:  ");
 		teste.acelerar();	
 	}
 	else{
